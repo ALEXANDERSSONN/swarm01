@@ -9,3 +9,10 @@
 
 # WAKATIME
 [WAKATIME](https://wakatime.com/@spcn04/projects/djmozndcbd)
+
+# Setup-Linux
+- Set เวลา โดยใช้คำสั่ง
+```
+sudo time datectl set-timezone Asia/Bangkok
+
+```
