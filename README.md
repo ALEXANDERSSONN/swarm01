@@ -14,5 +14,4 @@
 - Set เวลา โดยใช้คำสั่ง
 ```
 sudo time datectl set-timezone Asia/Bangkok
-
 ```
