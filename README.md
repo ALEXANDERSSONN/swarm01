@@ -1,6 +1,6 @@
 # REFERENCE
 
-[Link]github.com/docker/awesome-compose
+[Link](github.com/docker/awesome-compose)
 
 
 # SWARM-DEPLOY
