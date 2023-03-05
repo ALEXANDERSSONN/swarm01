@@ -15,11 +15,10 @@
 ```
 sudo time datectl set-timezone Asia/Bangkok
 ```
-- คำสั่งที่ใช้ในการอัพเดท
+- คำสั่งที่ใช้ในการเปลี่ยน Machine-ID
 ```
-sudo apt update; sudo apt upgrade -y
-```
-- คำสั่งที่ใช้ในการ Set ชื่อ Hostname
-```
-sudo hostnamectl set-hostname **ชื่อที่ต้องการจะตั้ง**
+rm /var/lib/dbus/machine-id
+echo -n > /etc/machine-id
+cat /etc/machine-id
+ln -s /etc/machine-id /var/lib/dbus/machine-id
 ```
