@@ -15,6 +15,10 @@
 ```
 sudo time datectl set-timezone Asia/Bangkok
 ```
+ - คำสั่งที่ใช้ในการ Set ชื่อ Hostname
+```
+sudo hostnamectl set-hostname **ชื่อที่ต้องการจะตั้ง**
+```
 - คำสั่งที่ใช้ในการเปลี่ยน Machine-ID
 ```
 rm /var/lib/dbus/machine-id
