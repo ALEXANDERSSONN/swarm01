@@ -36,3 +36,12 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 sudo docker run hello-world
 ```
+# BUILD-IMAGE & TAG
+- คำสั่งการ Build image
+```
+sudo docker compose "django/compose.yaml" up -d --build
+```
+- คำสั่งการ Tag
+```
+docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
+```
