@@ -96,3 +96,59 @@ networks:
     driver: overlay
     attachable: true
 ```
+- นำ compose.yaml ไป Stack Depoly on local
+
+# SWARM CLUSTER
+- Revert Proxy compose.yaml
+```
+version: '3.7'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    networks:
+      - default
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  web:
+    image: TARGET_IMAGE[:TAG]
+    networks:
+     - webproxy
+     - default
+    volumes:
+      - static_data:/usr/src/app/static
+    depends_on:
+      - db
+    deploy:
+      replicas: 1
+      labels:
+        - traefik.docker.network=webproxy
+        - traefik.enable=true
+        - traefik.http.routers.${APPNAME}-https.entrypoints=websecure
+        - traefik.http.routers.${APPNAME}-https.rule=Host("${APPNAME}$ URL ")
+        - traefik.http.routers.${APPNAME}-https.tls.certresolver=default
+        - traefik.http.services.${APPNAME}.loadbalancer.server.port=8000
+
+
+      restart_policy:
+        condition: any
+      update_config:
+        delay: 5s
+        parallelism: 1
+        order: start-first
+
+volumes:
+  db_data:
+  static_data:
+
+networks:
+  default:
+    driver: overlay
+    attachable: true
+  webproxy:
+    external: true
+```
