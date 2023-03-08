@@ -45,3 +45,54 @@ sudo docker compose "django/compose.yaml" up -d --build
 ```
 docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 ```
+
+# PUSH IMAGE TO DOCKER HUB 
+- คำสั่งเข้าสู่ระบบ Docker ใน VSCODE
+```
+docker login
+```
+- คำสั่ง Push Image To Docker Hub
+```
+docker push TARGET_IMAGE[:TAG]
+```
+
+# CREATE STACK DEPLOY
+- สร้างไฟล์ compose.yaml
+```
+version: '3.7'
+
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - db_data:/var/lib/postgresql/data
+
+  web:
+    image: TARGET_IMAGE[:TAG]
+    volumes:
+      - static_data:/usr/src/app/static
+    ports:
+      - "8088:8000"
+    depends_on:
+      - db
+    deploy:
+      replicas: 1
+      restart_policy:
+        condition: any
+      update_config:
+        delay: 5s
+        parallelism: 1
+        order: start-first
+
+volumes:
+  db_data:
+  static_data:
+
+networks:
+  default:
+    driver: overlay
+    attachable: true
+```
