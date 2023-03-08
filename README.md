@@ -96,7 +96,7 @@ networks:
     driver: overlay
     attachable: true
 ```
-- นำ compose.yaml ไป Stack Depoly on local
+- นำ compose.yaml ไป Stack Deploy on local
 
 # SWARM CLUSTER
 - Revert Proxy compose.yaml
