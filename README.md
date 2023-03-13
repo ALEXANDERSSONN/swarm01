@@ -55,6 +55,8 @@ docker login
 ```
 docker push TARGET_IMAGE[:TAG]
 ```
+![image](https://user-images.githubusercontent.com/115150753/224599877-1cd599ac-bdd5-49d4-84e3-d06a302a43e0.png)
+
 
 # CREATE STACK DEPLOY
 - สร้างไฟล์ compose.yaml
