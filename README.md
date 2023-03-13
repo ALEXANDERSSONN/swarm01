@@ -27,7 +27,7 @@ cat /etc/machine-id
 ln -s /etc/machine-id /var/lib/dbus/machine-id
 ```
 
-# INSTALL-DOCKER
+# INSTALL-DOCKER & DJANGO
 - คำสั่งที่ใช้ลง Docker
 ```
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
@@ -36,6 +36,12 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 ```
 sudo docker run hello-world
 ```
+- หากใช้งานได้ตามปกติ ผลลัพธ์จะขึ้นดังรูปนี้
+![image](https://user-images.githubusercontent.com/115150753/224601306-a00b350e-05d7-4e1d-9dcc-5c7e28b26d9b.png)
+- Clone DJANGO มาจาก REFERANCE
+- แก้ไฟล์ settings.py ของ DJANGO
+![image](https://user-images.githubusercontent.com/115150753/224601306-a00b350e-05d7-4e1d-9dcc-5c7e28b26d9b.png)
+
 # BUILD-IMAGE & TAG
 - คำสั่งการ Build image
 ```
