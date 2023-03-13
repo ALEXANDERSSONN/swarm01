@@ -37,9 +37,11 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo docker run hello-world
 ```
 - หากใช้งานได้ตามปกติ ผลลัพธ์จะขึ้นดังรูปนี้
+
 ![image](https://user-images.githubusercontent.com/115150753/224601306-a00b350e-05d7-4e1d-9dcc-5c7e28b26d9b.png)
 - Clone DJANGO มาจาก REFERANCE
 - แก้ไฟล์ settings.py ของ DJANGO เพื่อให้ RUN บน HOST อื่นได้
+
 ![image](https://user-images.githubusercontent.com/115150753/224601825-8d042f66-820e-466f-a50d-8575977bb356.png)
 
 # BUILD-IMAGE & TAG
@@ -52,6 +54,7 @@ sudo docker compose "django/compose.yaml" up -d --build
 docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 ```
 - ผลลัพธ์การ TAG สำเร็จ
+
 ![image](https://user-images.githubusercontent.com/115150753/224602149-d9809c66-dcd8-4cf7-80c6-1f2433d30622.png)
 
 # PUSH IMAGE TO DOCKER HUB 
@@ -63,6 +66,7 @@ docker login
 ```
 docker push TARGET_IMAGE[:TAG]
 ```
+
 ![image](https://user-images.githubusercontent.com/115150753/224599877-1cd599ac-bdd5-49d4-84e3-d06a302a43e0.png)
 
 
