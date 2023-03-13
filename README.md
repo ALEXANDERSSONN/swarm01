@@ -170,8 +170,8 @@ networks:
 - ADD Stack
 - COPY ข้อมูลใน Revert Proxy compose.yaml มาทั้งหมดแล้วนำไปใส่ที่ Web Editor
 
-![image](https://user-images.githubusercontent.com/115150753/224603071-8f8f2159-ea41-43e8-9acd-67967724d543.png)
-
 ![image](https://user-images.githubusercontent.com/115150753/224602833-fa1c022d-9c46-441f-b47b-de656e29446e.png)
+
+![image](https://user-images.githubusercontent.com/115150753/224603071-8f8f2159-ea41-43e8-9acd-67967724d543.png)
 
 ![chrome_QWpI7oeMV5](https://user-images.githubusercontent.com/115150753/223735745-fde67083-3758-4ecf-bcd9-8188810112fa.png)
