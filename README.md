@@ -113,7 +113,7 @@ networks:
 - นำ compose.yaml ไป Stack Deploy on local
 
 # SWARM CLUSTER
-- Revert Proxy compose.yaml
+- Revert Proxy compose.yaml กำหนด Image จากการ Tag ตามหัวข้อด้านบน
 ```
 version: '3.7'
 
@@ -143,7 +143,7 @@ services:
         - traefik.docker.network=webproxy
         - traefik.enable=true
         - traefik.http.routers.${APPNAME}-https.entrypoints=websecure
-        - traefik.http.routers.${APPNAME}-https.rule=Host("${APPNAME}$ URL ")
+        - traefik.http.routers.${APPNAME}-https.rule=Host("${APPNAME}$ **URL** ")
         - traefik.http.routers.${APPNAME}-https.tls.certresolver=default
         - traefik.http.services.${APPNAME}.loadbalancer.server.port=8000
 
