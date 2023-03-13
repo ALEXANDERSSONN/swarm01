@@ -168,9 +168,10 @@ networks:
 ```
 - เข้าไปที่ Portainer กดที่ Stack
 - ADD Stack
-- COPY ข้อมูลใน Revert Proxy compose.yaml มาทั้งหมดแล้วนำไปใส่ที่ Web Editor
 
 ![image](https://user-images.githubusercontent.com/115150753/224602833-fa1c022d-9c46-441f-b47b-de656e29446e.png)
+
+- COPY ข้อมูลใน Revert Proxy compose.yaml มาทั้งหมดแล้วนำไปใส่ที่ Web Editor
 
 ![image](https://user-images.githubusercontent.com/115150753/224603071-8f8f2159-ea41-43e8-9acd-67967724d543.png)
 
