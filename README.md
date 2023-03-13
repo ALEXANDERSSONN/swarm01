@@ -40,7 +40,7 @@ sudo docker run hello-world
 ![image](https://user-images.githubusercontent.com/115150753/224601306-a00b350e-05d7-4e1d-9dcc-5c7e28b26d9b.png)
 - Clone DJANGO มาจาก REFERANCE
 - แก้ไฟล์ settings.py ของ DJANGO
-![image](https://user-images.githubusercontent.com/115150753/224601306-a00b350e-05d7-4e1d-9dcc-5c7e28b26d9b.png)
+![image](https://user-images.githubusercontent.com/115150753/224601825-8d042f66-820e-466f-a50d-8575977bb356.png)
 
 # BUILD-IMAGE & TAG
 - คำสั่งการ Build image
