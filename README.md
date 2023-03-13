@@ -175,4 +175,8 @@ networks:
 
 ![image](https://user-images.githubusercontent.com/115150753/224603071-8f8f2159-ea41-43e8-9acd-67967724d543.png)
 
+- เพิ่ม ENVIRONMENT VARIABLE ของ APPNAME ตามชื่อต้องการ
+
+![image](https://user-images.githubusercontent.com/115150753/224603357-2cf8f55c-37c1-4650-84cc-20724bc8398b.png)
+
 ![chrome_QWpI7oeMV5](https://user-images.githubusercontent.com/115150753/223735745-fde67083-3758-4ecf-bcd9-8188810112fa.png)
