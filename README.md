@@ -166,5 +166,9 @@ networks:
   webproxy:
     external: true
 ```
+- เข้าไปที่ Portainer กดที่ Stack
+- ADD Stack
+
+![image](https://user-images.githubusercontent.com/115150753/224602833-fa1c022d-9c46-441f-b47b-de656e29446e.png)
 
 ![chrome_QWpI7oeMV5](https://user-images.githubusercontent.com/115150753/223735745-fde67083-3758-4ecf-bcd9-8188810112fa.png)
